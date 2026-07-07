@@ -11,8 +11,10 @@ terraform/.terraform.lock.hcl
 
 # Python
 __pycache__/
+**/__pycache__/
 *.pyc
 .pytest_cache/
+**/.pytest_cache/
 .venv/
 venv/
 
