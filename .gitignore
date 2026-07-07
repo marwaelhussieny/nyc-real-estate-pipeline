@@ -1,0 +1,24 @@
+# Terraform
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.backup
+terraform/terraform.tfvars
+terraform/.terraform.lock.hcl
+
+# Secrets
+.env
+*.pem
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# Airflow
+logs/
+*.log
+
+# Large raw data - keep the repo lean, document how to fetch it instead
+data/nyc-rolling-sales.csv

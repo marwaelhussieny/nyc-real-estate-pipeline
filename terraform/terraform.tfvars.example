@@ -1,0 +1,13 @@
+# Copy this file to terraform.tfvars and fill in real values.
+# NEVER commit terraform.tfvars or real secrets to git (it's already in .gitignore).
+
+aws_region   = "us-east-1"
+db_name      = "nyc_real_estate"
+db_username  = "pipeline_admin"
+
+# Get your IP with: curl -s ifconfig.me
+allowed_cidr = "YOUR_IP_HERE/32"
+
+# Better: don't put the password here at all.
+# Instead export it as an env var before running terraform:
+#   export TF_VAR_db_password="your-strong-password-here"
