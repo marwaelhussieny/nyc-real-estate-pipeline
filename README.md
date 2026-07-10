@@ -87,7 +87,16 @@ Known data quality issues handled explicitly in `transform.py`:
 ├── docker-compose.yml                 # Local Airflow for development
 └── .github/workflows/ci.yml           # pytest + terraform validate on every push
 ```
+## Evidence
 
+runs against real, live infrastructure:
+
+| | |
+|---|---|
+| ![Query results](docs/screenshots/01-query-results-avg-price-by-borough.png) | Average sale price by borough, queried live from the RDS instance |
+| ![Terraform apply](docs/screenshots/02-terraform-apply-success.png) | `terraform apply` provisioning the real RDS instance |
+| ![AWS Console](docs/screenshots/03-aws-rds-console.png) | The instance visible in the AWS RDS console |
+| ![Pipeline run](docs/screenshots/04-pipeline-run-data-quality-passing.png) | Full extract → transform → quality gate → load run |
 ## Running it
 
 ### 1. Provision the database (Terraform)
