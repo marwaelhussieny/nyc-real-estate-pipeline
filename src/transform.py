@@ -47,7 +47,7 @@ def transform(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
 
     # --- Standardize whitespace in string/object columns
-    obj_cols = df.select_dtypes(include=["object", "str"]).columns
+    obj_cols = df.select_dtypes(include="object").columns
     for col in obj_cols:
         df[col] = df[col].astype(str).str.strip()
 
