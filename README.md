@@ -28,7 +28,7 @@ it in production:
 
 ## Architecture
 
-![Pipeline architecture](docs/architecture.png)
+![Pipeline architecture](docs/screenshots/architecture.png)
 
 ## Dataset
 
