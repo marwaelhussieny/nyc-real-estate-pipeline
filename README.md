@@ -93,10 +93,10 @@ runs against real, live infrastructure:
 
 | | |
 |---|---|
-| ![Query results](docs/screenshots/01-query-results-avg-price-by-borough.png) | Average sale price by borough, queried live from the RDS instance |
-| ![Terraform apply](docs/screenshots/02-terraform-apply-success.png) | `terraform apply` provisioning the real RDS instance |
-| ![AWS Console](docs/screenshots/03-aws-rds-console.png) | The instance visible in the AWS RDS console |
-| ![Pipeline run](docs/screenshots/04-pipeline-run-data-quality-passing.png) | Full extract → transform → quality gate → load run |
+| ![Query results](docs/screenshots/01-query-results-avg-price-by-borough.jpg) | Average sale price by borough, queried live from the RDS instance |
+| ![Terraform apply](docs/screenshots/02-terraform-apply-success.jpg) | `terraform apply` provisioning the real RDS instance |
+| ![AWS Console](docs/screenshots/03-aws-rds-console.jpg) | The instance visible in the AWS RDS console |
+| ![Pipeline run](docs/screenshots/04-pipeline-run-data-quality-passing.jpg) | Full extract → transform → quality gate → load run |
 ## Running it
 
 ### 1. Provision the database (Terraform)
