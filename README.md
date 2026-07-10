@@ -26,24 +26,7 @@ it in production:
 
 ## Architecture
 
-```
-NYC DOF Rolling Sales (CSV export)
-        │
-        ▼
-┌───────────────┐    ┌─────────────────┐    ┌──────────────────┐    ┌────────────────┐
-│   extract()   │───▶│  transform()    │───▶│ data_quality()   │───▶│    load()      │
-│  src/extract  │    │  src/transform  │    │ src/data_quality │    │   src/load     │
-└───────────────┘    └─────────────────┘    └──────────────────┘    └───────┬────────┘
-                                                                             │
-                    Orchestrated weekly by Airflow (dags/nyc_real_estate_pipeline.py)
-                                                                             │
-                                                                             ▼
-                                                              ┌──────────────────────────┐
-                                                              │   AWS RDS Postgres       │
-                                                              │  (provisioned via        │
-                                                              │   terraform/*.tf)        │
-                                                              └──────────────────────────┘
-```
+![Pipeline architecture](docs/architecture.svg)
 
 ## Dataset
 
